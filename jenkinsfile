@@ -17,9 +17,10 @@ pipeline {
                    environment {
                                  ANYPOINT_CREDENTIALS = credentials('platform.credentials')
                                }
-                   steps 
+                   steps {
                             bat 'mvn  deploy -DmuleDeploy -DmuleVersion=4.3.0 -username=Pavan0003 -password=Pavan@9999 -DworkerType=Micro -Dworkers=1 -Dregion=us-west-2'
                          }
                     }
+         }
          }
     
